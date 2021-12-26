@@ -1,0 +1,136 @@
+maimai:
+  info:
+    uid:
+      '1234556'
+    greeting:
+      '你好，我是xxxx，我这有职位很适合你，你方便和我简单的沟通一下吗？希望你会感兴趣'
+    logsSid:
+      ''
+
+  pc:
+    cookie:
+      ''
+    csrfHeaderToken:
+      ''
+    csrfToken:
+      ''
+    csrf:
+      ''
+  mobile:
+    cookie:
+      ''
+    csrfToken:
+      ''
+    csrf:
+      ''
+    accessToken:
+      ''
+    launchUUID:
+      ''
+    sessionUid:
+      ''
+    smDis:
+      ''
+    uDid:
+      ''
+    reqId:
+      ''
+    webViewUserAgent:
+      ''
+  jobs:
+    - jid:
+        ''
+      ejid:
+        ''
+    - jid:
+        ''
+      ejid:
+        ''
+  ignoreEjid:
+    - ejid:
+        ''
+    - ejid:
+        ''
+  contactConf:
+    visitorSource:
+      'jobInteractionsVisitors'
+    recommendSource:
+      'recruiterTabCandidateRecommend'
+    visitorFr:
+      'visitor_pc_v0.1'
+    recomendFr:
+      'recommend_pc_v0.1'
+boss:
+  cookie:
+    ''
+  token:
+    ''
+  zpToken:
+    ''
+  antiToken:
+    ''
+  activations:
+    - id:
+        '2501'
+    - id:
+        '2502'
+    - id:
+        '2503'
+    - id:
+        '2504'
+    - id:
+        '2505'
+    - id:
+        '0'
+  jobs:
+    - encryptJobId:
+        ''
+
+lagou:
+  cookie:
+    ''
+  showId:
+    ''
+  positionId:
+    ''
+  chatPositionId:
+    ''
+  grettingId:
+    ''
+  condition:
+    'go,hadoop,idea,java,linux,mybatis,mysql,oracle,php,spring,sql,tcp/ip,web后端开发,云计算｜云存储,区块链,移动服务端开发'
+  queryList:
+    [ 'isBigCompany=1&', 'isEliteSchool=1&', 'isOverSea=1&' ]
+
+moka:
+  # moka配置
+  token:
+    ''
+  timeTemp:
+    '%a %m %d %Y 00:00:00 GMT+0800 (中国标准时间)'
+
+  zhinengIds:
+    [ ]
+  jodIds:
+    [ ]
+  ignoreName:
+    ['CTO']
+
+  info:
+    nameCN:
+      ''
+    email:
+      ''
+    uid:
+      ''
+    recommenderCode:
+      ''
+
+
+feishu:
+  appId:
+    ''
+  appSecret:
+    ''
+
+
