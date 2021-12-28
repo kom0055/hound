@@ -10,7 +10,7 @@ from datetime import timedelta
 
 import requests
 
-from v1 import boss_helper
+import boss_helper
 import feishu_bot
 import lagou_helper
 import maimai_helper
