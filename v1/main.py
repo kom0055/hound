@@ -422,29 +422,29 @@ def upload_boss_resume():
 
 
 def ask_all_contacts():
-    boss_job_dict = {}
+    # boss_job_dict = {}
     asked_names = []
-    moka_job_dict = {}
-    boss_job_list = boss_helper.get_job_detail_list()
-    if boss_job_list is None or len(boss_job_list) == 0:
-        return
-    for boss_job in boss_job_list:
-        if boss_job is None:
-            continue
-        if 'jobId' not in boss_job:
-            continue
-        boss_job_dict[boss_job['jobId']] = boss_job
-    if len(boss_job_dict) == 0:
-        return
-    moka_jobs = moka_helper.get_moka_all_jobs_from_cache()
-    if moka_jobs is None or len(moka_jobs) == 0:
-        return
-    for moka_job in moka_jobs:
-        if moka_job is None or 'title' not in moka_job:
-            continue
-        moka_job_dict[moka_job['title']] = moka_job
-    if len(moka_job_dict) == 0:
-        return
+    # moka_job_dict = {}
+    # boss_job_list = boss_helper.get_job_detail_list()
+    # if boss_job_list is None or len(boss_job_list) == 0:
+    #     return
+    # for boss_job in boss_job_list:
+    #     if boss_job is None:
+    #         continue
+    #     if 'jobId' not in boss_job:
+    #         continue
+    #     boss_job_dict[boss_job['jobId']] = boss_job
+    # if len(boss_job_dict) == 0:
+    #     return
+    # moka_jobs = moka_helper.get_moka_all_jobs_from_cache()
+    # if moka_jobs is None or len(moka_jobs) == 0:
+    #     return
+    # for moka_job in moka_jobs:
+    #     if moka_job is None or 'title' not in moka_job:
+    #         continue
+    #     moka_job_dict[moka_job['title']] = moka_job
+    # if len(moka_job_dict) == 0:
+    #     return
 
     page_int = 1
     contacts = boss_helper.get_contacts(page_int)
@@ -468,19 +468,19 @@ def ask_all_contacts():
                                              geek_info['securityId']):
                     continue
 
-            if 'jobId' not in geek_info:
-                continue
-            job_id = geek_info['jobId']
-            job_name = ''
+            # if 'jobId' not in geek_info:
+            #     continue
+            # job_id = geek_info['jobId']
+            # job_name = ''
 
-            if job_id in boss_job_dict:
-                boss_job = boss_job_dict[job_id]
-                if boss_job is not None:
-                    if 'jobName' in boss_job and boss_job['jobName'] is not None:
-                        job_name = boss_job['jobName']
+            # if job_id in boss_job_dict:
+            #     boss_job = boss_job_dict[job_id]
+            #     if boss_job is not None:
+            #         if 'jobName' in boss_job and boss_job['jobName'] is not None:
+            #             job_name = boss_job['jobName']
 
-            if not transfer_2_target_position_flag and job_name not in moka_job_dict:
-                continue
+            # if not transfer_2_target_position_flag and job_name not in moka_job_dict:
+            #     continue
 
             # 索要简历
             if 'bothTalked' in geek_info and geek_info['bothTalked']:
@@ -610,8 +610,6 @@ def upload_lagou_resume():
 
 
 if __name__ == '__main__':
-    maimai_helper.default_timeout = 0
-    analyze_all_interviewee_list()
     if len(sys.argv) < 2:
         exit(0)
     arg_input = sys.argv[1]
